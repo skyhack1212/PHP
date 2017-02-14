@@ -1,7 +1,7 @@
 <?php 
-	$root = 'http://api.1ddian.cn/';//可自定义域名
+    $root = 'http://api.1ddian.cn/';//可自定义域名
     $url= $root . $_REQUEST['client_url'];
-	//用curl实现Post请求，可跨域
+    //用curl实现Post请求，可跨域
     $ch = curl_init();
     curl_setopt($ch, CURLOPT_POST, 1);  
     curl_setopt($ch, CURLOPT_URL, $url);  
